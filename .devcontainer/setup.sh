@@ -25,6 +25,5 @@ then
 fi
 
 npm install
-npm run install-poetry
 npm run generate-requirements
 npm run thaw
