@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+
+  postgres:
+    image: postgres:14.0
+    container_name: postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+    volumes:
+      - ${HOST_PROJECT_PATH}/sample_data/postgresql:/docker-entrypoint-initdb.d
+    command: postgres -c log_min_error_statement=fatal -c wal_level=logical -c max_wal_senders=10 -c max_replication_slots=1
+
+  pgadmin:
+    image: dpage/pgadmin4:6.11
+    container_name: pgadmin
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=user@domain.com
+      - PGADMIN_DEFAULT_PASSWORD=root
+    ports:
+      - 80:80

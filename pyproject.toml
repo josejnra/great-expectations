@@ -5,9 +5,11 @@ description = "My studies on great-expectations"
 authors = ["José Nunes <josenunesra@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.9,<3.10"
 great-expectations = "^0.15.15"
-SQLAlchemy = "^1.4.39"
+sqlalchemy-bigquery = "^1.4.4"
+pybigquery = "^0.10.2"
+psycopg2-binary = "^2.9.3"
 
 [tool.poetry.dev-dependencies]
 

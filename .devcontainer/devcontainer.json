@@ -15,6 +15,12 @@
 		}
 	},
 
+	"remoteEnv": {
+		// the original host directory which is needed for volume 
+		// mount commands from inside the container (Docker in Docker)
+		"HOST_PROJECT_PATH": "${localWorkspaceFolder}"
+	},
+
 	"runArgs": ["--name", "great-expectations-vscode"],
 
 	// Configure tool-specific properties.

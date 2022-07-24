@@ -318,3 +318,4 @@ cython_debug/
 # .pnp.*
 
 # End of https://www.toptal.com/developers/gitignore/api/python,node,yarn
+requirements.txt

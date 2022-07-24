@@ -1,0 +1,198 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "transportadora.pedidos_expectation_suite",
+  "expectations": [
+    {
+      "expectation_type": "expect_table_columns_to_match_ordered_list",
+      "kwargs": {
+        "column_list": [
+          "id",
+          "data_criacao",
+          "id_cliente"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_table_row_count_to_be_between",
+      "kwargs": {
+        "max_value": 5,
+        "min_value": 5
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "data_criacao",
+        "max_value": "2022-01-05 10:03:59+00:00",
+        "min_value": "2022-01-01 15:34:34+00:00",
+        "parse_strings_as_datetimes": false
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "data_criacao"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "data_criacao",
+        "max_value": 1.0,
+        "min_value": 1.0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "data_criacao",
+        "type_list": [
+          "DATE",
+          "TIME",
+          "DATETIME",
+          "DATETIME2",
+          "DATETIME64",
+          "SMALLDATETIME",
+          "DATETIMEOFFSET",
+          "TIMESTAMP",
+          "Timestamp",
+          "TimestampType",
+          "DateType",
+          "datetime64",
+          "datetime64[ns]",
+          "timedelta[ns]",
+          "<M8[ns]"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_min_to_be_between",
+      "kwargs": {
+        "column": "id_cliente",
+        "max_value": 1.0,
+        "min_value": 1.0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_max_to_be_between",
+      "kwargs": {
+        "column": "id_cliente",
+        "max_value": 5.0,
+        "min_value": 5.0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_mean_to_be_between",
+      "kwargs": {
+        "column": "id_cliente",
+        "max_value": 3.0,
+        "min_value": 3.0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_quantile_values_to_be_between",
+      "kwargs": {
+        "allow_relative_error": true,
+        "column": "id_cliente",
+        "quantile_ranges": {
+          "quantiles": [
+            0.05,
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "value_ranges": [
+            [
+              1.0,
+              1.0
+            ],
+            [
+              2.0,
+              2.0
+            ],
+            [
+              3.0,
+              3.0
+            ],
+            [
+              4.0,
+              4.0
+            ],
+            [
+              5.0,
+              5.0
+            ]
+          ]
+        }
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "id_cliente"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "id_cliente",
+        "max_value": 1.0,
+        "min_value": 1.0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "id_cliente",
+        "type_list": [
+          "FLOAT",
+          "FLOAT4",
+          "FLOAT8",
+          "FLOAT64",
+          "DOUBLE",
+          "DOUBLE_PRECISION",
+          "NUMERIC",
+          "FloatType",
+          "DoubleType",
+          "float",
+          "float_",
+          "float16",
+          "float32",
+          "float64",
+          "number",
+          "DECIMAL",
+          "REAL"
+        ]
+      },
+      "meta": {}
+    }
+  ],
+  "ge_cloud_id": null,
+  "meta": {
+    "columns": {
+      "data_criacao": {
+        "description": ""
+      },
+      "id": {
+        "description": ""
+      },
+      "id_cliente": {
+        "description": ""
+      }
+    },
+    "great_expectations_version": "0.15.15"
+  }
+}
