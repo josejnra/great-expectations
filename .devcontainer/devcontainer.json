@@ -15,6 +15,8 @@
 		}
 	},
 
+	"runArgs": ["--name", "great-expectations-vscode"],
+
 	// Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
@@ -41,7 +43,8 @@
 				"ms-python.vscode-pylance",
 				"matangover.mypy",
 				"ryanluker.vscode-coverage-gutters",
-				"emeraldwalk.RunOnSave"
+				"emeraldwalk.RunOnSave",
+				"GrapeCity.gc-excelviewer"
 			]
 		}
 	},
