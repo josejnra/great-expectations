@@ -16,7 +16,6 @@
     {
       "expectation_type": "expect_table_row_count_to_be_between",
       "kwargs": {
-        "max_value": 5,
         "min_value": 5
       },
       "meta": {}
@@ -25,8 +24,7 @@
       "expectation_type": "expect_column_values_to_be_between",
       "kwargs": {
         "column": "data_criacao",
-        "max_value": "2022-01-05 10:03:59+00:00",
-        "min_value": "2022-01-01 15:34:34+00:00",
+        "min_value": "2010-01-01 15:34:34+00:00",
         "parse_strings_as_datetimes": false
       },
       "meta": {}
@@ -90,15 +88,6 @@
       "meta": {}
     },
     {
-      "expectation_type": "expect_column_mean_to_be_between",
-      "kwargs": {
-        "column": "id_cliente",
-        "max_value": 3.0,
-        "min_value": 3.0
-      },
-      "meta": {}
-    },
-    {
       "expectation_type": "expect_column_quantile_values_to_be_between",
       "kwargs": {
         "allow_relative_error": true,
@@ -141,15 +130,6 @@
       "expectation_type": "expect_column_values_to_not_be_null",
       "kwargs": {
         "column": "id_cliente"
-      },
-      "meta": {}
-    },
-    {
-      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
-      "kwargs": {
-        "column": "id_cliente",
-        "max_value": 1.0,
-        "min_value": 1.0
       },
       "meta": {}
     },

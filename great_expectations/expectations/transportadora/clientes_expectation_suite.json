@@ -1,0 +1,297 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "transportadora.clientes_expectation_suite",
+  "expectations": [
+    {
+      "expectation_type": "expect_table_columns_to_match_ordered_list",
+      "kwargs": {
+        "column_list": [
+          "id",
+          "nome",
+          "endereco",
+          "cidade",
+          "estado",
+          "data_criacao"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_table_row_count_to_be_between",
+      "kwargs": {
+        "min_value": 1109
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "nome"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "nome",
+        "max_value": 0.9900811541929666,
+        "min_value": 0.9900811541929666
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "nome",
+        "type_list": [
+          "CHAR",
+          "NCHAR",
+          "VARCHAR",
+          "NVARCHAR",
+          "TEXT",
+          "NTEXT",
+          "STRING",
+          "StringType",
+          "string",
+          "str",
+          "object",
+          "dtype('O')"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "endereco"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "endereco",
+        "max_value": 1.0,
+        "min_value": 1.0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "endereco",
+        "type_list": [
+          "CHAR",
+          "NCHAR",
+          "VARCHAR",
+          "NVARCHAR",
+          "TEXT",
+          "NTEXT",
+          "STRING",
+          "StringType",
+          "string",
+          "str",
+          "object",
+          "dtype('O')"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "cidade"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "cidade",
+        "max_value": 0.5238954012623985,
+        "min_value": 0.5238954012623985
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "cidade",
+        "type_list": [
+          "CHAR",
+          "NCHAR",
+          "VARCHAR",
+          "NVARCHAR",
+          "TEXT",
+          "NTEXT",
+          "STRING",
+          "StringType",
+          "string",
+          "str",
+          "object",
+          "dtype('O')"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "estado",
+        "value_set": [
+          "AC",
+          "AL",
+          "AM",
+          "AP",
+          "BA",
+          "CE",
+          "DF",
+          "ES",
+          "GO",
+          "MA",
+          "MG",
+          "MS",
+          "MT",
+          "PA",
+          "PB",
+          "PE",
+          "PI",
+          "PR",
+          "RJ",
+          "RN",
+          "RO",
+          "RR",
+          "RS",
+          "SC",
+          "SE",
+          "SP",
+          "TO"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "estado"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "estado",
+        "max_value": 0.024346257889990983,
+        "min_value": 0.024346257889990983
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "estado",
+        "type_list": [
+          "CHAR",
+          "NCHAR",
+          "VARCHAR",
+          "NVARCHAR",
+          "TEXT",
+          "NTEXT",
+          "STRING",
+          "StringType",
+          "string",
+          "str",
+          "object",
+          "dtype('O')"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "data_criacao",
+        "max_value": "2022-07-25 16:18:39+00:00",
+        "min_value": "2020-07-25 21:20:31+00:00",
+        "parse_strings_as_datetimes": false
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "data_criacao"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "data_criacao",
+        "max_value": 1.0,
+        "min_value": 1.0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "data_criacao",
+        "type_list": [
+          "DATE",
+          "TIME",
+          "DATETIME",
+          "DATETIME2",
+          "DATETIME64",
+          "SMALLDATETIME",
+          "DATETIMEOFFSET",
+          "TIMESTAMP",
+          "Timestamp",
+          "TimestampType",
+          "DateType",
+          "datetime64",
+          "datetime64[ns]",
+          "timedelta[ns]",
+          "<M8[ns]"
+        ]
+      },
+      "meta": {}
+    }
+  ],
+  "ge_cloud_id": null,
+  "meta": {
+    "citations": [
+      {
+        "batch_request": {
+          "data_asset_name": "public.clientes",
+          "data_connector_name": "default_inferred_data_connector_name",
+          "datasource_name": "transportadora",
+          "limit": 1000
+        },
+        "citation_date": "2022-07-26T02:08:14.951173Z",
+        "comment": "Created suite added via CLI"
+      }
+    ],
+    "columns": {
+      "cidade": {
+        "description": ""
+      },
+      "data_criacao": {
+        "description": ""
+      },
+      "endereco": {
+        "description": ""
+      },
+      "estado": {
+        "description": ""
+      },
+      "id": {
+        "description": ""
+      },
+      "nome": {
+        "description": ""
+      }
+    },
+    "great_expectations_version": "0.15.15"
+  }
+}
