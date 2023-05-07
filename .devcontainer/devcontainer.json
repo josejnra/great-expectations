@@ -50,7 +50,8 @@
 				"matangover.mypy",
 				"ryanluker.vscode-coverage-gutters",
 				"emeraldwalk.RunOnSave",
-				"GrapeCity.gc-excelviewer"
+				"GrapeCity.gc-excelviewer",
+				"donjayamanne.python-extension-pack"
 			]
 		}
 	},
